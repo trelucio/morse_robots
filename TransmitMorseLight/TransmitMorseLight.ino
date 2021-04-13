@@ -27,15 +27,15 @@ CORE_COLOR_BEACON beacon;
 // Create an instance of the class CORE_DIGITAL named push on port D7
 CORE_DIGITAL push(7);
 
+// Run Morse Code Message ONCE: click reset to run again
 void setup(){
-// No setup code required
   beacon.setColor(beacon.OFF);
 
-  String msg = "MORSE"; 
-  String msg1 = "COMPUTER SCIENCE";
-  String msg2 = "THERESE";
+  String msg1 = "MORSE"; 
+  String msg2 = "APPLE PIE";
+  String msg3 = "ROBOTS ARE COOL";
 
-  encode(msg);
+  encode(msg1);
 }
 
 const int ms = 200; //delay time/light speed in ms; == interval
